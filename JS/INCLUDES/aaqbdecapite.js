@@ -1,0 +1,2 @@
+readJS('C','',"<i>Ah, le type trouvé dans le temple, il y a sept jours ?<br/><br/>Son cadavre a bleui  très rapidement, c'était très inhabituel, aussi je me suis dépéché de l'examiner. Tout ce que j'ai trouvé, c'est un tatouage en forme de pie caché sous son aisselle. <br/><br/>Puis, on l'a emporté dans la nécropole, avant qu'il ne sente trop mauvais. </i><br/><br/>Le nécrodermiste dessine le <b>tatouage de pie</b>",'8',18, 'Décapité', "Le décapité", 65);
+links(';');

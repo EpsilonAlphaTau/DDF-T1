@@ -1,0 +1,57 @@
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=0.9">
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="../JS/shortcuts.js"></script>
+<script src="../JS/js.js"></script>
+
+<body id="bod" style='background-color: #FFF;'>
+	<div align='center'>
+		
+		<div style='position:fixed;width: 500px;left: 50%;margin-left: -250px;background: white; top: 0px; padding-top: 5px;border-bottom: solid 1px black;padding-bottom: 2px;'>
+			<div>
+				<input type="button" id="Bretour" style="display:none; width: 100px; height: 30px; font-size: 20px;" value="Retour" onclick="retour()">
+				<input type="button" id="Bnumero" style="display:none; height: 30px; font-size: 20px;" value="X" onclick="hints()">
+			</div>
+			<input type="text" id="textB" style='width: 500px; margin: 3px; '>
+			<div>
+				<input type="button" id="Bpred" style="display:none; width: 30px; height: 30px; font-size: 20px;" value="<" onclick="predClue()">
+				<div style='display:inline-block; width : 430px'>
+					<select id="categories" style="display:none; height: 30px; position:relative; top:-2px;" onchange='displaySubMedias()'>
+						<option value="">Aucune</option>
+					</select>
+					<select id="medias" style="display:none; height: 30px; position:relative; top:-2px;">
+					</select>
+					<input type="button" id="requetes" style="height: 30px; font-size: 20px;" value="Chercher" onclick="requete()">
+				</div>
+				<input type="button" id="Bnext" style="display:none; width: 30px; height: 30px; font-size: 20px;" value=">" onclick="nextClue()">
+			</div>
+		</div>
+		<div align='center'>
+			<div id="divA" style="padding-top:110px; width:500px; " align='center'></div>
+			<div style="padding: 15px;width: 500px; " >
+				<div id="divB" style="padding: 15px; text-align: justify; font-size: 20px; line-height: 25px; " ></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var cook = getCookie();
+	if (cook !== undefined && cook !== "")
+	{
+		enterPassword("!" + cook);
+	}
+	var input = document.getElementById('textB');
+	input.addEventListener("keypress", function(event) {
+	  	if (event.key === "Enter") {
+	    	event.preventDefault();
+	    	document.getElementById("requetes").click();
+	  	}
+	});
+	
+</script>
+</html>
+

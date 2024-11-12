@@ -1,0 +1,2 @@
+readJS('C','',"Dehors, il y avait une grande mare de sang autour du cadavre décapité. Les portes du temple étaient grandes ouvertes.<br/><br/>Deux choses étaient étranges : <br/>Des symboles semblaient avoir été dessinés avec le sang, que l'on vous a griffonnés sur un papier.<br/>Des traces de pas ensanglantées sortaient du le temple, mais aucune n'y entrait, comme si ceux qui avaient déposé le corps avaient flotté au-dessus du sol.",'1',103, 'Sang', "Le sang", 10);
+links(';');

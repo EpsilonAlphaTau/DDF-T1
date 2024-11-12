@@ -1,0 +1,2 @@
+readJS('C','',"On ne sait pas non plus qui était le vieil homme mort dehors. Manifestement, ses vêtements empestaient l'alcool. On l'a emporté en même temps que l'autre corps. Le clerc parie que c'est la mortrainée qui l'a tué...<br/><br/>Comme on ignore tout de lui, le clerc fait référence à lui en l'appelant 'le vieux'. Personne n'a semblé signaler sa disparition.<br/><br/>C'était peut-être lui le coupable ? Le clerc a l'air d'en être certain.",'1',115, 'Mort', "Le mort, à l'extérieur du temple", 7);
+links(';');
