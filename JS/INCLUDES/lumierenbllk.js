@@ -1,2 +1,2 @@
-readJS('I','',"Oui, c'est nécessaire d'avoir de la lumière pour avancer...",'9',170, 'Lumière', "Lumière dans la nécropole", 133);
+readJS('I','',"Oui, c'est nécessaire d'avoir de la lumière pour avancer...",'9',170, 'Lumière', "Lumière dans la nécropole", 134);
 links(';');
