@@ -424,11 +424,11 @@ function hints(){
 
 function GetCrypt(seed){
 	switch(seed){
-	case '0' : return doDecCheat("U2FsdGVkX1832E01WY03YbwkFY/4tZVwDrbJH39VhwFrTUzNVdmcxJQiUphSj/LNYSPb/wBwrM3V7K4fkEhafw==");
-	case '1' : return doDecCheat("U2FsdGVkX1+v0sPxqzDEgspVQ/ImAq8mDcfdZhcVMvN7iq7SwQhpTdXr4lBtfJca6Ol9vO28D+Ha5XgBB006QYdVAWXNmEfENLBbrzzfKeZjDBF0gy7crAnVRn2Gq89XNDqXCXpThIBNlpv4KiVj+g==");
-	case '2' : return doDecCheat("U2FsdGVkX19Zpiq6Ce3N9h80HE5VYOx+4xgOJQOeqhLEr+yOosPKoEqBdERZRhwaPJtbw6REFq5TSjvVHqxxpYuHdBP5NpNzKwihGyRAJ3FS8gnLj9pH9VrIZsdjduXw/WooT6SOBEzMJskGMl1dQA==");
-	case '3' : return doDecCheat("U2FsdGVkX1/GJ9ksY4MHWBT+stJGnKTIiPrdEuTWi85olnFeqJDbYU8pj+uegncMFkuGi5Z7Uug0KpSE4DyIt+eu0qFeSewQk6VJR5H6DbMz7WmEqs/kkgZ4/ASkUrXlcq2FGrl0Mk67LAsaSYqxlg==");
-	case '4' : return doDecCheat("U2FsdGVkX19aS+H/MweKFTWgu5zmjHMIw1oIBRq6PXo3wPy9o4XRViFXQ+VcptqPvWKdM1fPC/DFbq4SlbuPSIeQtr4D0Guxt8d6ac3l3kqkL3pnsl8gvYw2CEUVFCgK2HSyqQyjKLFJgDcAjs2ceQ==");
+	case '1' : return doDecCheat("U2FsdGVkX1832E01WY03YbwkFY/4tZVwDrbJH39VhwFrTUzNVdmcxJQiUphSj/LNYSPb/wBwrM3V7K4fkEhafw==");
+	case '2' : return doDecCheat("U2FsdGVkX1+v0sPxqzDEgspVQ/ImAq8mDcfdZhcVMvN7iq7SwQhpTdXr4lBtfJca6Ol9vO28D+Ha5XgBB006QYdVAWXNmEfENLBbrzzfKeZjDBF0gy7crAnVRn2Gq89XNDqXCXpThIBNlpv4KiVj+g==");
+	case '3' : return doDecCheat("U2FsdGVkX19Zpiq6Ce3N9h80HE5VYOx+4xgOJQOeqhLEr+yOosPKoEqBdERZRhwaPJtbw6REFq5TSjvVHqxxpYuHdBP5NpNzKwihGyRAJ3FS8gnLj9pH9VrIZsdjduXw/WooT6SOBEzMJskGMl1dQA==");
+	case '4' : return doDecCheat("U2FsdGVkX1/GJ9ksY4MHWBT+stJGnKTIiPrdEuTWi85olnFeqJDbYU8pj+uegncMFkuGi5Z7Uug0KpSE4DyIt+eu0qFeSewQk6VJR5H6DbMz7WmEqs/kkgZ4/ASkUrXlcq2FGrl0Mk67LAsaSYqxlg==");
+	case '0' : return doDecCheat("U2FsdGVkX19aS+H/MweKFTWgu5zmjHMIw1oIBRq6PXo3wPy9o4XRViFXQ+VcptqPvWKdM1fPC/DFbq4SlbuPSIeQtr4D0Guxt8d6ac3l3kqkL3pnsl8gvYw2CEUVFCgK2HSyqQyjKLFJgDcAjs2ceQ==");
 	}
 }
 
@@ -470,7 +470,7 @@ function GetCode() {
 }
 
 function setCookie(cvalue) {
-	setCookieName(cvalue, 'ddfpwd');
+	setCookieName(cvalue, 'ddfdwp');
 }
 function setCookieName(cvalue, name) {
   const d = new Date();
@@ -480,7 +480,7 @@ function setCookieName(cvalue, name) {
 }
 
 function getCookie() {
-	return getCookieName('ddfpwd');
+	return getCookieName('ddfdwp');
 }
 function getCookieName(nom) {
   let name = nom + "=";
