@@ -399,26 +399,35 @@ function retour(){
 	shortcut(fileClue[toGo]);
 }
 
+function border(s){
+	return "<div align='center' style='border: solid;border-radius: 5px;padding: 5px;'>" + s + "</div>";
+}
 function hints(){
 	var code = GetCode();
 	document.getElementById("requetes").value = "";
 	document.getElementById("divA").innerHTML = "";
-	document.getElementById("divB").innerHTML = setAccents("Faites des recherches. L'ordre des mots ne compte pas, ni les accents. Il vaut mieux éviter les petits mots de liaison ('aller lac' plutôt que 'aller jusqu'au lac').<br/><br/>"
-	+ "Vous pouvez utiliser des prénoms ou des lieux pour spécifier la recherche.<br/><br/>"
+	document.getElementById("divB").innerHTML = "";
+
+	document.getElementById("divB").innerHTML += border("<br/><div align='center'>Ce jeu accompagne la parution du <br/><a target='_blank' href='https://www.amazon.fr/Dernier-Fa%C3%A7onneurs-Sillages-Adverses/dp/B0CNYLL5B8/ref=sr_1_1?crid=1C8WZB4HWPCLJ&dib=eyJ2IjoiMSJ9.LZMAXUhflFuHzftk2TjZ0DqbMITO5tUSar4HwpIWMrs.OEj8knmhW9rswlO5vtTcMENqlumawAVHT_ni5oCFw_A&dib_tag=se&keywords=dernier+fa%C3%A7onneurs&qid=1730488003&sprefix=%2Caps%2C76&sr=8-1'>Dernier des Façonneurs</a>, tome I.</div>");
+	
+	document.getElementById("divB").innerHTML += border("Votre parcours :<br/><br/>" +  JSPlan());
+	
+	document.getElementById("divB").innerHTML += border("Code de sauvegarde à chercher<br/><b style='font-size: 15px;'>!" + code + "</b><br/> (copié dans le presse papier et les cookies)");
+	navigator.clipboard.writeText("!"+code);
+
+	document.getElementById("divB").innerHTML += border("Règles :<br/><br/>Faites des recherches. L'ordre des mots ne compte pas, ni les accents. Il vaut mieux éviter les petits mots de liaison ('aller lac' plutôt que 'aller jusqu'au lac').<br/><br/>"
+	+ "Utilisez les sélections pour rechercher à un endroit précis, ou auprès de quelqu'un. Vous pouvez utiliser des prénoms ou des lieux pour spécifier la recherche.<br/><br/>"
 	+ "Cliquez sur les mots du texte pour les ajouter à la recherche.<br/><br/>"
 	+ "Si une piste ne mène plus nulle part, c'est peut-être qu'une autre est à suivre en parallèle.<br/><br/>"
 	+ "Quand toutes les pistes importantes ont été trouvées depuis un indice, les petits points disparaissent après 'Cherchez...'.<br/><br/>"
-	+ "Jusqu'où cela peut-il mener ? L'aventure se termine à l'indice "+ lastClue +".<br/><br/>"	
-	+ "<div align='center' style='border: solid;border-radius: 5px;padding: 5px;'>Code de sauvegarde à chercher<br/><br/><b style='font-size: 12px;'>!" + code + "</b><br/><br/> (copié dans le presse papier et les cookies)</div>");
-	navigator.clipboard.writeText("!"+code);
-	document.getElementById("divB").innerHTML += "<br/><div align='center'>Ce jeu accompagne la parution du <br/><a target='_blank' href='https://www.amazon.fr/Dernier-Fa%C3%A7onneurs-Sillages-Adverses/dp/B0CNYLL5B8/ref=sr_1_1?crid=1C8WZB4HWPCLJ&dib=eyJ2IjoiMSJ9.LZMAXUhflFuHzftk2TjZ0DqbMITO5tUSar4HwpIWMrs.OEj8knmhW9rswlO5vtTcMENqlumawAVHT_ni5oCFw_A&dib_tag=se&keywords=dernier+fa%C3%A7onneurs&qid=1730488003&sprefix=%2Caps%2C76&sr=8-1'>Dernier des Façonneurs</a>, tome I.</div>"
+	+ "Jusqu'où cela peut-il mener ? L'aventure se termine à l'indice "+ lastClue +".<br/><br/>");	
 
-	document.getElementById("divB").innerHTML += "<br/><br/>Pour cette session voici vos recherches : <br/><br/>";
+	var s = "<br/><br/>Pour cette session voici vos recherches : <br/><br/>";
 	for(var i =0; i < recherchesEffectuees.length; i++) {
 		if (recherchesEffectuees[i] != "")
-			document.getElementById("divB").innerHTML += recherchesEffectuees[i] + "<br/>";
+			s += recherchesEffectuees[i] + "<br/>";
 	}
-	
+	document.getElementById("divB").innerHTML += border(s);
 }
 
 //var test = GetCode();
@@ -576,7 +585,6 @@ function displayMedias(medium){
 	
 }
 function displaySubMedias(){
-	log("display subs");
 	var cat = document.getElementById("categories").value;
 	var medias = document.getElementById("medias");
 	medias.innerHTML = "";
@@ -615,4 +623,43 @@ function GetLetter(b) {
 function GetDeLetter(b) {
 	if (b < 10) return b;
 	return b.charCodeAt(0) - 87;
+}
+
+
+var alreadyDone = [];
+function JSPlan(){
+	alreadyDone = [];
+	return WriteJSPlan(0);
+}
+
+function WriteJSPlan(numero) {
+	log(numero + ">>>>>" + questMap[numero].links);
+	var s = "";
+	var allFound = true;
+	if (questMap[numero].links != "")
+	{
+		s += "<div style='padding-left:20px;border-left: solid 1px;border-radius: 0px 0px 0px 10px;'>";
+		var splits = questMap[numero].links.split(";");
+		for(var i = 0; i < splits.length; i++)
+		{
+			var num = parseInt(splits[i]);
+			if (!found[savePosition[num]]) {
+				allFound = false;
+				continue;
+			}
+		    if (alreadyDone[num])
+		        s += "> " + questMap[num].name + "<br/>";
+		    else
+		    {
+		    	alreadyDone[num] = true;
+		        s += WriteJSPlan(num);
+		    }
+		}
+		s += "</div>";
+	}
+	if (allFound)
+		s = "<span style='color:#38b138' onclick='shortcut("+numero+")'>" + questMap[numero].name + "</span><br/>" + s;
+	else 
+		s = "<span onclick='shortcut("+numero+")'>" + questMap[numero].name + "</span><br/>" + s;
+	return s;
 }
