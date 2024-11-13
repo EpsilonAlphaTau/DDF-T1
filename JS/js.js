@@ -169,7 +169,9 @@ function includeScript(pathArray){
 		lastscript = scr;
 		document.body.appendChild(scr);
 		scr.onload = function() {
-    		document.getElementById('medias').value = 0;
+			//remettre à zéro que si on est pas dedans
+    		//document.getElementById('medias').value = 0;
+    		//document.getElementById('categories').value = 0;
 		};
 	};
 
@@ -534,7 +536,7 @@ function GetDecode(code){
 		elt++;
 	}
 	//console.log(found);
-	document.getElementById("medias").innerHTML = "<option value='o0'>Nulle part en particulier</option>";
+	document.getElementById("medias").innerHTML = "<option value='o0'></option>";
 
 	for(var j=0; j<listMedias.length; j++) {
 		var split = listMedias[j].deb.split(";");
@@ -574,6 +576,7 @@ function displayMedias(medium){
 	
 }
 function displaySubMedias(){
+	log("display subs");
 	var cat = document.getElementById("categories").value;
 	var medias = document.getElementById("medias");
 	medias.innerHTML = "";
@@ -587,6 +590,7 @@ function displaySubMedias(){
 	else 
 		medias.style.display = "none";
 }
+
 
 function debloquerMedium(mediumId){
 	for(var j=0; j<listMedias.length; j++) {
