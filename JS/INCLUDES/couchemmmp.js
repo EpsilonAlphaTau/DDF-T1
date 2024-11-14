@@ -1,2 +1,2 @@
-readJS('I','',"Une couche classique, en laine, avec de nombreuses couvertures.",'22',48, "Couche", "Couche de Fey", 157);
+readJS('I','',"Une couche classique, en laine, avec de nombreuses couvertures.",'22',48, "Couche", "Couche de Fey", 158);
 links(';');
