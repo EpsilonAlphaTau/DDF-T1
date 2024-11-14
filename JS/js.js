@@ -636,7 +636,7 @@ function JSPlan(){
 }
 
 function compareItems(a, b) {
-	return savePosition[ab] - savePosition[b];
+	return savePosition[a] - savePosition[b];
 }
 function WriteJSPlan(numero) {
 	var s = "";
