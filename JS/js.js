@@ -641,7 +641,7 @@ function JSPlan(){
 		if (found[i]) {
 			var num = GetNumeroAtPosition(i);
 			if (!alreadyDone[num])
-				s += "!!!" + WriteJSPlan(num);
+				s += "??? " + WriteJSPlan(num);
 		}
 	}
 

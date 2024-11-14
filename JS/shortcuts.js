@@ -599,7 +599,7 @@ listMedias[25].id = '25';
 listMedias[25].nom = unhide('Ik9saW9yZWxhIg==');
 listMedias[25].code = unhide('Im9saXoi');
 listMedias[25].deb = unhide('IjU0Ig==');
-listMedias[25].category = 'Possessions';
+listMedias[25].category = 'Autre';
 listMedias[25].found = false;
 listMedias[26] = {};
 listMedias[26].id = '26';
