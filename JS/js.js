@@ -639,7 +639,6 @@ function compareItems(a, b) {
 	return savePosition[b] - savePosition[a];
 }
 function WriteJSPlan(numero) {
-	log(numero + ">>>>>" + questMap[numero].links);
 	var s = "";
 	var allFound = true;
 	if (questMap[numero].links != "")
@@ -664,7 +663,7 @@ function WriteJSPlan(numero) {
 		s += "</div>";
 	}
 	if (allFound)
-		s = "<span style='color:#38b138' onclick='shortcut("+numero+")'>" + questMap[numero].name + "</span><br/>" + s;
+		s = "<span style='color:#38b138' onclick='shortcut("+numero+")'>" + questMap[numero].name + savePosition[numero] + "</span><br/>" + s +;
 	else 
 		s = "<span onclick='shortcut("+numero+")'>" + questMap[numero].name + "</span><br/>" + s;
 	return s;
