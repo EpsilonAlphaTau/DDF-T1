@@ -636,7 +636,7 @@ function JSPlan(){
 }
 
 function compareItems(a, b) {
-	return savePosition[a] - savePosition[b];
+	return savePosition[b] - savePosition[a];
 }
 function WriteJSPlan(numero) {
 	log(numero + ">>>>>" + questMap[numero].links);
