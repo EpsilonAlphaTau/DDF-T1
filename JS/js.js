@@ -406,6 +406,8 @@ function borderLeft(s){
 	return "<div style='border: solid;border-radius: 5px;padding: 5px;'>" + s + "</div>";
 }
 function hints(){
+	document.getElementById("divB").style.backgroundImage = ""
+	
 	var code = GetCode();
 	document.getElementById("requetes").value = "";
 	document.getElementById("divA").innerHTML = "";
