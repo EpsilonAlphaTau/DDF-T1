@@ -402,6 +402,9 @@ function retour(){
 function border(s){
 	return "<div align='center' style='border: solid;border-radius: 5px;padding: 5px;'>" + s + "</div>";
 }
+function borderLeft(s){
+	return "<div style='border: solid;border-radius: 5px;padding: 5px;'>" + s + "</div>";
+}
 function hints(){
 	var code = GetCode();
 	document.getElementById("requetes").value = "";
@@ -410,7 +413,7 @@ function hints(){
 
 	document.getElementById("divB").innerHTML += border("<br/><div align='center'>Ce jeu accompagne la parution du <br/><a target='_blank' href='https://www.amazon.fr/Dernier-Fa%C3%A7onneurs-Sillages-Adverses/dp/B0CNYLL5B8/ref=sr_1_1?crid=1C8WZB4HWPCLJ&dib=eyJ2IjoiMSJ9.LZMAXUhflFuHzftk2TjZ0DqbMITO5tUSar4HwpIWMrs.OEj8knmhW9rswlO5vtTcMENqlumawAVHT_ni5oCFw_A&dib_tag=se&keywords=dernier+fa%C3%A7onneurs&qid=1730488003&sprefix=%2Caps%2C76&sr=8-1'>Dernier des Façonneurs</a>, tome I.</div>");
 	
-	document.getElementById("divB").innerHTML += border("Votre parcours :<br/><br/>" +  JSPlan());
+	document.getElementById("divB").innerHTML += borderLeft("Votre parcours : (cliquer pour retrourner)<br/><br/>" +  JSPlan());
 	
 	document.getElementById("divB").innerHTML += border("Code de sauvegarde à chercher<br/><b style='font-size: 15px;'>!" + code + "</b><br/> (copié dans le presse papier et les cookies)");
 	navigator.clipboard.writeText("!"+code);
