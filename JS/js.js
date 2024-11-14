@@ -645,7 +645,7 @@ function JSPlan(){
 		}
 	}
 
-	return s;
+	return "<div style='overflow-x:scroll;overflow-y:scroll;white-space: nowrap;max-height:300px'>" + s + "</div>";
 }
 
 function GetNumeroAtPosition(pos) {
