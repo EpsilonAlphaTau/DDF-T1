@@ -632,7 +632,22 @@ function GetDeLetter(b) {
 var alreadyDone = [];
 function JSPlan(){
 	alreadyDone = [];
-	return WriteJSPlan(0);
+	var s = WriteJSPlan(0);
+	for(var i = 0; i < found.length; i++) {
+		if (found[i]) {
+			var num = GetNumeroAtPosition(i);
+			if (!alreadyDone(num))
+				s += "!!!" + WriteJSPlan(num);
+		}
+	}
+
+	return s;
+}
+
+function GetNumeroAtPosition(pos) {
+	for(var i = 0; i < savePosition.length; i++) 
+		if (savePosition[i] === pos)
+			return i;
 }
 
 function compareItems(a, b) {
