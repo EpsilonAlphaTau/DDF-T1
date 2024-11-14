@@ -1129,7 +1129,7 @@ questMap[45].name = unhide('IkNhZGF2cmUgZGUgbW9uIHByZWRlY2Vzc2V1ciI=');
 questMap[45].links = unhide('IiI=');
 questMap[46] = {};
 questMap[46].name = unhide('IkRvbWljaWxlIGRlIEZleSI=');
-questMap[46].links = unhide('IjE4MjsxODQi');
+questMap[46].links = unhide('IjE4MjsxODQ7MTg5OzE5MTsxOTI7MjA0OzIwNSI=');
 questMap[189] = {};
 questMap[189].name = unhide('IkNsZSBtaW51c2N1bGUgcG91ciBvdXZyaXIgbGUgdGlyb2lyIg==');
 questMap[189].links = unhide('IjUyIg==');
