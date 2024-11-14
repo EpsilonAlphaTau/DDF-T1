@@ -632,6 +632,7 @@ function GetDeLetter(b) {
 var alreadyDone = [];
 function JSPlan(){
 	alreadyDone = [];
+	alreadyDone[0] = true;
 	var s = WriteJSPlan(0);
 	for(var i = 0; i < found.length; i++) {
 		if (found[i]) {
