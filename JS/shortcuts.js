@@ -922,7 +922,7 @@ questMap[237].name = unhide('IkZpbGF0dXJlIGR1IGNsZXJjIExob3VmaW4i');
 questMap[237].links = unhide('IjY1Ig==');
 questMap[13] = {};
 questMap[13].name = unhide('IlZlaWxsYSwgbGUgYm91cmdtZXN0cmUgZHUgcG9ydCI=');
-questMap[13].links = unhide('IjE2OSI=');
+questMap[13].links = unhide('IjEzNTsxNjki');
 questMap[14] = {};
 questMap[14].name = unhide('IkNhZGF2cmUi');
 questMap[14].links = unhide('IjE2Ig==');
