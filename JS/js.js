@@ -636,7 +636,7 @@ function JSPlan(){
 }
 
 function compareItems(a, b) {
-	return savePosition[b] - savePosition[a];
+	return savePosition[ab] - savePosition[b];
 }
 function WriteJSPlan(numero) {
 	var s = "";
@@ -663,8 +663,8 @@ function WriteJSPlan(numero) {
 		s += "</div>";
 	}
 	if (allFound)
-		s = "<span style='color:#38b138' onclick='shortcut("+numero+")'>" + questMap[numero].name + savePosition[numero] + "</span><br/>" + s;
+		s = "<span style='color:#38b138' onclick='shortcut("+numero+")'>" + questMap[numero].name  + "</span><br/>" + s;
 	else 
-		s = "<span onclick='shortcut("+numero+")'>" + questMap[numero].name + savePosition[numero] + "</span><br/>" + s;
+		s = "<span onclick='shortcut("+numero+")'>" + questMap[numero].name  + "</span><br/>" + s;
 	return s;
 }
