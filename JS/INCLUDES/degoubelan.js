@@ -1,1 +1,0 @@
-aCompleter('goubelan de');
