@@ -665,6 +665,6 @@ function WriteJSPlan(numero) {
 	if (allFound)
 		s = "<span style='color:#38b138' onclick='shortcut("+numero+")'>" + questMap[numero].name + savePosition[numero] + "</span><br/>" + s;
 	else 
-		s = "<span onclick='shortcut("+numero+")'>" + questMap[numero].name + "</span><br/>" + s;
+		s = "<span onclick='shortcut("+numero+")'>" + questMap[numero].name + savePosition[numero] + "</span><br/>" + s;
 	return s;
 }
