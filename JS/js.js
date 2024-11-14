@@ -672,7 +672,7 @@ function WriteJSPlan(numero) {
 				continue;
 			}
 		    if (alreadyDone[num])
-		        s += "> " + questMap[num].name + "<br/>";
+		        s += "> <span style='font-size:10px'>" + questMap[num].name + "</span><br/>";
 		    else
 		    {
 		    	alreadyDone[num] = true;
