@@ -635,6 +635,9 @@ function JSPlan(){
 	return WriteJSPlan(0);
 }
 
+function compareItems(a, b) {
+	return savePosition[a] - savePosition[b];
+}
 function WriteJSPlan(numero) {
 	log(numero + ">>>>>" + questMap[numero].links);
 	var s = "";
@@ -642,7 +645,7 @@ function WriteJSPlan(numero) {
 	if (questMap[numero].links != "")
 	{
 		s += "<div style='padding-left:20px;border-left: solid 1px;border-radius: 0px 0px 0px 10px;'>";
-		var splits = questMap[numero].links.split(";");
+		var splits = questMap[numero].links.split(";").sort(compareItems);
 		for(var i = 0; i < splits.length; i++)
 		{
 			var num = parseInt(splits[i]);
