@@ -158,6 +158,7 @@ function addSelected() {
 var lastscript = null;
 
 function includeScript(pathArray){
+	document.getElementById("divB").style.backgroundImage = ""
 	var script = document.createElement('script');
 	script.src = '../JS/INCLUDES/' + pathArray[0] + '.js';
 
@@ -407,7 +408,7 @@ function borderLeft(s){
 }
 function hints(){
 	document.getElementById("divB").style.backgroundImage = ""
-	
+
 	var code = GetCode();
 	document.getElementById("requetes").value = "";
 	document.getElementById("divA").innerHTML = "";
