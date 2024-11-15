@@ -1,1 +1,1 @@
-aCompleter('longue vue');
+aCompleter('longuevue');
