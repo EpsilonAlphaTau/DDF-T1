@@ -1,2 +1,2 @@
 readJS('E','',"L’Outre-Monde est rempli de pièges, de filets, de frontières qu’il ne faut surtout pas franchir, car l’on peut tout de même se perdre. Il existe des signes. Des matières, des teintes. Des ossements, cachés dans les herbes. Le froid qui nous gagne jusque dans les os. Par malheur il y a aussi des appâts, des tentations, des fascinations, des reflets de lumière et des promesses de repos. Des créatures dans des recoins qui vous appellent à elles afin de se nourrir de votre sang dans le noir.",'0',197, "Outre-Monde", "L'Outre-Monde", 179);
-links(';');
+links('');

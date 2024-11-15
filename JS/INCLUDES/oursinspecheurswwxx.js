@@ -1,2 +1,2 @@
 readJS('C','',"Vous observez un moment les pêcheurs aller et venir...<br/>Alors, vous apercevez le talisman en forme d'escargot sur le cou du coupable ! <br/>Il ne cherche pas à mentir ou à s'enfuir : il ne lui a pas semblé que le talisman portait chance. Peut-être tentera-t-il plutôt de trouver une plume de griffon, comme les autres...<br/>Vous pouvez donc procéder à l'échange escargot longue-vue",'19',39, "Pécheurs d'oursins", "Les pécheurs d'oursins", 122);
-links(';');
+links('163');

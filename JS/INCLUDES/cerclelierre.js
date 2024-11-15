@@ -1,2 +1,2 @@
 readJS('D','',"On vous a invité dans le Cercle du Lierre, où les inflammés les plus expérimentés partagent leur savoir avec les nouveaux inflammés. C'est à la fois un endroit et un groupe au sein de la Sortilée. <br/><br/>Vous y découvrez un grand nombre de personnes très intéressantes. Beaucoup d'inflammés ont eu le privilège de voyager, d'étudier, de faire des rencontres diverses, et se sont efforcés de transformer ces expériences en connaissances utiles. <br/><br/>Ainsi sont rassemblés des savants, des occultistes, des lettrés...<br/><br/>Il va falloir trouver comment aborder les sujets qui vous préoccupent sans éveiller les soupçons.",'12',57, "Cercle du lierre", "Le Cercle du Lierre", 183);
-links(';');
+links('');

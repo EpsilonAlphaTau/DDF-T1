@@ -1,2 +1,2 @@
 readJS('C','',"<i>Voilà autre chose ! Sombre feux ! </i><br/>Syrdanian abandonne ses dés pour regarder le dessin que vous lui tendez, les doigts tremblants :<br/><i>C'est le motif qu'on a dessiné avec du sang autour du cadavre ? Cela représente les huit tentacules de l'éternel Colõmã des forces marines. Ce symbole n'a été aperçu qu'une fois, dans des circonstances similaires... Il y a près de six siècles. Et je n'en aurais pas eu connaissance si quelqu'un ne m'avait pas rebattu les oreilles avec, l'année passée. Vous devriez aller le consulter : il se nomme Femtheon Meloprin, c'est un vieil inflammé. </i>",'27',196, "Spirale huit branches", "Spirale à huit branches", 97);
-links(';');
+links('54');

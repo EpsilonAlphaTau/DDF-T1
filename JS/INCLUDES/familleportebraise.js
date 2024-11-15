@@ -1,2 +1,2 @@
 readJS('C','',"C'est une riche famille d'armateurs. Leur fortune s'est encore développée depuis que des clients du nord leur ont commandé la fabrication du Vandérélion. <br/>Ils font désormais partie des personnages les plus puissants de Porviria. <br/><br/>Pourraient-ils commettre des meurtres dans le but d'empêcher l'un des leurs d'épouser une femme de plus basse condition ? Cette théorie semble bien farfelue.",'0',152, "Famille Portebraise", "La puissante famille Portebraise", 31);
-links(';');
+links('');

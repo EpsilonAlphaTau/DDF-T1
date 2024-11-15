@@ -1,2 +1,2 @@
 readJS('C','',"De toute votre carrière, on ne vous avait jamais demandé de travailler sur un évènement aussi étrange... Manifestement, c'est parce que personne n'est parvenu à y comprendre quoi que ce soit que Fendar Cernefronde a finalement fait appel à vous. <br/><br/>Tôt le matin, vous avez rendez-vous avec le clerc sur les lieux du crime : un temple de Porviria, situé non loin du port. <br/><br/>Vous vous présentez avec votre ordre de mission signé en main. Le clerc est déjà là : il vérifie la signature et vous salue chaleureusement.",'0',0, "La plus étrange des affaires", "La plus étrange des affaires", 0);
-links(';');
+links('1;6;7;10;101;104;105');

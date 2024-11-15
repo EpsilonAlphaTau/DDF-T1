@@ -1,2 +1,2 @@
 readJS('C','',"<i>Celui de l'affaire du temple du port ? Arrivé en même temps que le décapité ? <br/><br/>D'abord, on a pensé qu'il était mort à cause de la trainée. Mais son visage était figé dans une grimace de terreur cauchemardesque. Je parie que son coeur a lâché. Quelque chose a dû lui ficher une terrible trouille ! <br/><br/>Comme l'autre, on a enlevé ses habits et on l'a envoyé à la nécropole. C'est eux qui se chargent de leur trouver une place. <br/><br/>Est-ce que vous avez trouvé de qui il s'agissait ? <br/></i>",'8',117, "Vieux temple", "Le vieux de l'affaire du temple", 67);
-links(';');
+links('118');

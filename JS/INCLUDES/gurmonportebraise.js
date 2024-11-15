@@ -1,2 +1,2 @@
 readJS('C','',"C'est le malheureux époux. Il a dix neuf ans, et est très superstitieux : peut-être que ses épousailles sont vouées au malheur ? Il y a tellement de drames, depuis leur rencontre, l'année précédente...<br/>Il n'a pas vu la scène du crime lui-même, puisqu'on est venu le prévenir que la cérémonie était annulée. <i>Repoussée</i>, plus exactement.",'0',109, "Gurmon Portebraise", "Gurmon Portebraise", 26);
-links(';');
+links('165');

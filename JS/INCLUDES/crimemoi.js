@@ -1,2 +1,2 @@
 readJS('C','',"Lorsque j'avais trente ans, j'avais accumulé plusieurs dettes de jeu. <br/><br/>Afin de les rembourser, je me suis sali les mains. Je me suis comporté comme l'un de ces assassins, qui ont disparu. Sinon que je ne m'en suis pas pris à des inflammés : j'aurais bien trop peur. <br/><br/>C'était un crime de vengeance. J'y repense souvent, lorsque mon emploi m'épuise.",'7',208, "Moi crime", "Mon crime", 61);
-links(';');
+links('');
