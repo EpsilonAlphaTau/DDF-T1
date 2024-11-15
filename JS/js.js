@@ -296,6 +296,7 @@ function readJS(type, image, texte, mediumId, numero, recherche, titre, ordre){
 	}	
 
 	divb.innerHTML += "<br/><br/><br/>";
+	
 }
 
 function links(list){
@@ -305,9 +306,18 @@ function links(list){
 	}
 	var split = list.split(";");
 	var fini = true;
+	var first = true;
 	for(var i =0; i < split.length; i++) {
 		if (!found[savePosition[parseInt(split[i])]])
 			fini = false;
+		else 
+		{
+			if (first) {
+				first = false;
+				document.getElementById("divB").innerHTML += "<div style='border-top : solid 1px black'>Liens déjà trouvés :</div>";
+			}
+			document.getElementById("divB").innerHTML += "<span onclick='shortcut("+split[i]+")'>>>>> " + questMap[parseInt(split[i])].name + "</span><br/>";
+		}	
 	}
 	if (!fini)
 		document.getElementById("requetes").value = "Chercher...";
