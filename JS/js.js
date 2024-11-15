@@ -306,7 +306,7 @@ function links(list){
 	var split = list.split(";");
 	var fini = true;
 	for(var i =0; i < split.length; i++) {
-		if (!found[savePosition[split[i]]])
+		if (!found[savePosition[parseint(split[i])]])
 			fini = false;
 	}
 	if (!fini)
