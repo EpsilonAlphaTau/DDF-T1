@@ -620,7 +620,7 @@ listMedias[28].id = '28';
 listMedias[28].nom = unhide('Ik91dHJlLU1vbmRlIg==');
 listMedias[28].code = unhide('Im9vdXV0dCI=');
 listMedias[28].deb = unhide('IjU4Ig==');
-listMedias[28].category = 'Lieu';
+listMedias[28].category = 'Autre';
 listMedias[28].found = false;
 listMedias[29] = {};
 listMedias[29].id = '29';
